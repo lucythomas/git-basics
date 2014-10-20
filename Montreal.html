@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+      <title>My Website</title>
+     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/respond.min.js"></script>
+</head>
+
+<body>
+  <div class="row">
+  	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  		<div class="navbar-header">
+  			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+  				<span class="sr-only">Toggle navigation</span>
+  				<span class="glyphicon glyphicon-collapse-down"></span>
+  				MENU
+  			</button>
+  		</div>
+  		<div class="collapse navbar-collapse" id="collapse">
+		  	<ul class="nav navbar-nav pull-right">
+		  		<li><a href="index.html">Home</a></li>
+		  		<li><a href="About.html">About</a></li>
+		  		<li><a href="London.html">London</a></li>
+		  		<li><a href="Seattle.html">Seattle</a></li>
+		  		<li class="active"><a href="#">Montreal</a></li>
+	  		</ul>
+	  </div>
+  	</nav>
+  </div>
+
+<div class="jumbotron">
+	<div class="container">
+		<div class="intro-area row row-table row-full-height">
+			<h1>Montreal</h1>
+		</div>
+	</div>
+</div>
+
+
+<!-- row 1 -->
+		<article>
+			<h2>Lucy recommends</h2>
+		</article>
+				<div class="row">
+					<ul>
+						<li class="thumbnail col-sm-4">
+							<a href="#Dinner" data-toggle="modal"><img src="img/Restaurant.jpg" alt="Dinner"></a>
+							<div class="caption">
+								<h4>Where to eat</h4>
+								<p><a href="#Dinner" data-toggle="modal" class="btn btn-primary" role="button">Read more</a></p>
+							</div>
+						</li>
+						<li class="thumbnail col-sm-4">
+							<a href="#Hotel" data-toggle="modal"><img src="img/Hotel.jpg" alt="Hotel"></a>
+							<div class="caption">
+								<h4>Neighborhoods</h4>
+								<p><a href="#Hotel" data-toggle="modal" class="btn btn-primary" role="button">Read more</a></p>
+							</div>
+						</li>
+						<li class="thumbnail col-sm-4">
+							<a href="#Tourist" data-toggle="modal"><img src="img/Tourist.jpg" alt="Tourist"></a>
+							<div class="caption">
+								<h4>Tourist attractions</h4>
+								<p><a href="#Tourist" data-toggle="modal" class="btn btn-primary" role="button">Read more</a></p>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+<footer class="row">
+	<p><small>Copyright 2014</small></p>
+</footer>
+
+</div> <!--end container-->
+
+<!--modal windows-->
+<div id="Dinner" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                        <h3 class="modal-title">Where to eat</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p><img src="img/Restaurant.jpg" alt="Dinner" class="img-responsive pull-right">Enjoy a delicious breakfast at "Passe Compose" on Rue Roy Est in the Plateau Mont Royal neighbrhood. In a quiet spot among lovely traditional homes you can pretend you're in France for a morning, looking out the window and sipping your coffee.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+<div id="Hotel" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                        <h3 class="modal-title">Where to stay</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p><img src="img/Hotel.jpg" alt="Hotel" class="img-responsive pull-right">Start in the bustling downtown area and do some shopping on Rue St. Catherine. Explore more residential neighborhoods such as Le Plateau Mont-Royal and Mile End. Don't forget to get lost in the cobblestone streets of Vieux Montreal.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Tourist" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                        <h3 class="modal-title">Where to go</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p><img src="img/Tourist.jpg" alt="Tourist" class="img-responsive pull-right">If it's warm enough, explore the Montreal Botanical Garden and the Parc Jean-Drapeau. In Vieux Montreal, go to one of the city's oldest churches, Notre-Dame-de-Bon-Secours Chapel. Visit one of Montreal's many museums, such as the Museum of Fine Arts, and experience the nightlife on Rue St. Denis.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- javascript -->
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

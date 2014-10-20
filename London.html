@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+      <title>My Website</title>
+     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/respond.min.js"></script>
+</head>
+
+<body>
+  <div class="row">
+  	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  		<div class="navbar-header">
+  			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+  				<span class="sr-only">Toggle navigation</span>
+  				<span class="glyphicon glyphicon-collapse-down"></span>
+  				MENU
+  			</button>
+  		</div>
+  		<div class="collapse navbar-collapse" id="collapse">
+		  	<ul class="nav navbar-nav pull-right">
+		  		<li><a href="index.html">Home</a></li>
+		  		<li><a href="About.html">About</a></li>
+		  		<li class="active"><a href="#">London</a></li>
+		  		<li><a href="Seattle.html">Seattle</a></li>
+		  		<li><a href="Montreal.html">Montreal</a></li>
+	  		</ul>
+	  </div>
+  	</nav>
+  </div>
+
+<div class="jumbotron">
+	<div class="container">
+		<div class="intro-area row row-table row-full-height">
+			<h1>London</h1>
+		</div>
+	</div>
+</div>
+
+
+<!-- row 1 -->
+		<article>
+			<h2>Lucy recommends</h2>
+		</article>
+				<div class="row">
+					<ul>
+						<li class="thumbnail col-sm-4">
+							<a href="#Dinner" data-toggle="modal"><img src="img/Restaurant.jpg" alt="Dinner"></a>
+							<div class="caption">
+								<h4>Where to eat</h4>
+								<p><a href="#Dinner" data-toggle="modal" class="btn btn-primary" role="button">Read more</a></p>
+							</div>
+						</li>
+						<li class="thumbnail col-sm-4">
+							<a href="#Hotel" data-toggle="modal"><img src="img/Hotel.jpg" alt="Hotel"></a>
+							<div class="caption">
+								<h4>Neighborhoods</h4>
+								<p><a href="#Hotel" data-toggle="modal" class="btn btn-primary" role="button">Read more</a></p>
+							</div>
+						</li>
+						<li class="thumbnail col-sm-4">
+							<a href="#Tourist" data-toggle="modal"><img src="img/Tourist.jpg" alt="Tourist"></a>
+							<div class="caption">
+								<h4>Tourist attractions</h4>
+								<p><a href="#Tourist" data-toggle="modal" class="btn btn-primary" role="button">Read more</a></p>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+<footer class="row">
+	<p><small>Copyright 2014</small></p>
+</footer>
+
+<!--end container-->
+
+<!--modal windows-->
+<div id="Dinner" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                        <h3 class="modal-title">Where to eat</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p><img src="img/Restaurant.jpg" alt="Dinner" class="img-responsive pull-right">For breakfast, try le Creperie de Hampstead. Enjoy a crepe while wandering around this picturesque neighborhood. For dinner, get the authentic British pub experience at the CASK Pub and Kitchen in Pimlico. They are known for their beer and burger selection - you can't go wrong!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+<div id="Hotel" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                        <h3 class="modal-title">Where to stay</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p><img src="img/Hotel.jpg" alt="Hotel" class="img-responsive pull-right">The Notting Hill neighborhood has the best of all London has to offer. Visit the Portobello Markets, sample one of the many restaurants and cafes, and hop on tube or simply walk to many of London's most famous tourist destinations.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Tourist" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                        <h3 class="modal-title">Where to go</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p><img src="img/Tourist.jpg" alt="Tourist" class="img-responsive pull-right">They say that when a man is tired of London, he is tired of life. Learn more about the long and illustrious history of the city by visiting buildings such as St. Paul's Cathedral, the Tower of London and Westminster Abbey. Explore London's thriving arts scene through visiting the British Museum and the National Gallery and seeing a play in the West End. Finally, enjoy one of the many nightlife options the city</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- javascript -->
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
