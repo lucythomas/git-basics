@@ -56,11 +56,74 @@ $(document).ready(function(){
 				}); //end attr
 		}); //end Montreal img hover
 
-$('#Montreal2').click(function(){
+	$('#Montreal2').click(function(){
 		$('#Montreal2').animate({
 			opacity: '1',
 			height: 'toggle'
 		}); // end animate
 	}); //end SeattlePier click
 
+	$('#Londonbtn').click(function(){
+		$('#Londonbtn').css({
+			backgroundColor: 'green'
+		}); //end London btn css
+	}); //end London btn click
+
+	$('#Tourist-btn').click(function(){
+		$('#Tourist-img').animate({
+			opacity: '0.25',
+			height: 'toggle'
+		}); //end Tourist animate
+	}); //end Tourist click
+
+	$('p:even').css({
+		color: "white",
+		backgroundColor: "brown"
+	}); //end p css
+
+	$('#Fade').fadeOut(1000).fadeIn(1000);
+
+	$('#state').click(function(){
+			if ($('#state').val() == 'Massachusetts')
+		{
+			$('.state-group .help-block').text('Lucy lives there too!');
+		} else if ($('#state').val() == 'Connecticut') 
+			{
+				$('.state-group .help-block').text('Lucy used to live there!');
+			}
+		}); //end change
+
+
+	$('#name').focusout(function(){
+		if($('#name').val().length == 0) {
+			$('.name-group .help-block').text('Please enter your name.');
+			$('.name-group').attr({
+				class: 'col-sm-4 form-group name-group has-error'
+			}); // end attr
+		} else {
+			$('.name-group .help-block').text('');
+			$('.name-group').attr({
+				class: 'col-sm-4 form-group name-group'
+			}); //end attr
+		}
+	}); //end focus out
+
+	$('Form-btn').click(function(submit){
+		if($('#name').val().length == 0) {
+			$('.name-group .help-block').text('Please enter your name.');
+			$('.name-group').attr({
+				class: 'col-sm-4 form-group name-group has-error'
+			}); // end attr
+			submit.preventDefault();
+		} else {
+			$('#myModal').modal();
+		    submit.preventDefault();
+		}
+	}); //end click
+
+
 }); //end ready
+
+
+
+
