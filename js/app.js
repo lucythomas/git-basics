@@ -108,9 +108,9 @@ $(document).ready(function(){
 		}
 	}); //end focus out
 
-	$('Form-btn').click(function(submit){
+	$('#Form-btn').click(function(submit){
 		if($('#name').val().length == 0) {
-			$('.name-group .help-block').text('Please enter your name.');
+			$('.name-group .help-block').text('Please enter your name before submitting.');
 			$('.name-group').attr({
 				class: 'col-sm-4 form-group name-group has-error'
 			}); // end attr
@@ -120,8 +120,6 @@ $(document).ready(function(){
 		    submit.preventDefault();
 		}
 	}); //end click
-
-
 }); //end ready
 
 
