@@ -83,15 +83,17 @@ $(document).ready(function(){
 
 	$('#Fade').fadeOut(1000).fadeIn(1000);
 
-	$('#state').click(function(){
-			if ($('#state').val() == 'Massachusetts')
-		{
-			$('.state-group .help-block').text('Lucy lives there too!');
-		} else if ($('#state').val() == 'Connecticut') 
+	$('#state-select').change(function(){
+		if ($('#state-select').val() === 'MA')
 			{
-				$('.state-group .help-block').text('Lucy used to live there!');
-			}
-		}); //end change
+				$('.state-group .help-block').text('Lucy lives there too!');
+		} else if ($('#state-select').val() === 'CT') 
+		{
+			$('.state-group .help-block').text('Lucy used to live there!');
+		} else {
+			$('.state-group .help-block').text(' ');
+		}
+	}); //end change
 
 
 	$('#name').focusout(function(){
